@@ -25,5 +25,10 @@ public class LoginPageSteps extends LoginPage {
         _passwordField.sendKeys(LoginPageData._password);
         return this;
     }
+    @Step("RememberMe-ს მონიშვნა")
+    public LoginPageSteps ClickRememberMe(){
+        _rememberMeButton.click();
+        return this;
+    }
 
 }

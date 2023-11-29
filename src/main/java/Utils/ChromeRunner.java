@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class ChromeRunner {
     @BeforeMethod
     public void setup(){
-        open("http://the-internet.herokuapp.com/?fbclid=IwAR3wAFjKJUSh0kcjbeEs43ZA-4ueHPiHxaPGrpsl-Y6otFsQLIhdieujEMo");
+        open("https://vitamini.ge");
         Configuration.browserSize = "1920x1080";
     }
 
