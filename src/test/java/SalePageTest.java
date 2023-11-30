@@ -25,7 +25,7 @@ public class SalePageTest extends ChromeRunner {
                 .OpenSalePage();
         sleep(200);
         ElementsCollection _products = $$(".product-wrapper");
-        Assert.assertTrue(_products.isEmpty());
+        Assert.assertFalse(_products.isEmpty());
     }
     @Test
     @Description("შევამოწმოთ რომ ფასდაკლებული ფასი ნაკლებია ორიგინალი ფასის")

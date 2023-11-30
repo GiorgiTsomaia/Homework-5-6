@@ -8,10 +8,12 @@ import org.testng.annotations.BeforeMethod;
 import static com.codeborne.selenide.Selenide.open;
 
 public class ChromeRunner {
-    @BeforeMethod
+    @BeforeMethod(description = "Configure browser before tests")
     public void setup(){
         open("https://vitamini.ge");
+        Configuration.browser = "chrome";
         Configuration.browserSize = "1920x1080";
+
     }
 
     @AfterMethod
